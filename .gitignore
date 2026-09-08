@@ -1,4 +1,2 @@
-# Ignore binary APK files in git history (APKs belong in GitHub Releases)
-*.apk
 .DS_Store
 Thumbs.db
