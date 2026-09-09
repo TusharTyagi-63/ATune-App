@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/TusharTyagi-63/ATune-App/raw/main/ATune-v1.2.apk">
+  <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-v1.2.apk">
     <img src="https://img.shields.io/badge/Download-ATune%20v1.2%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
   </a>
 </p>
@@ -35,7 +35,7 @@
 ## 📲 How to Download & Install
 
 1. **Download the APK**:
-   - Click the button above or [**Direct Download ATune-v1.2.apk**](https://github.com/TusharTyagi-63/ATune-App/raw/main/ATune-v1.2.apk).
+   - Click the button above or [**Direct Download ATune-v1.2.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-v1.2.apk).
    - Alternatively, head over to the [**Releases Tab**](https://github.com/TusharTyagi-63/ATune-App/releases) to view all versions and changelogs.
 
 2. **Allow Installation from Unknown Sources**:
