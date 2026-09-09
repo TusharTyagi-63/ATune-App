@@ -5,13 +5,13 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-v1.2.apk">
-    <img src="https://img.shields.io/badge/Download-ATune%20v1.2%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+  <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-v1.3.apk">
+    <img src="https://img.shields.io/badge/Download-ATune%20v1.3%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v1.2-blue.svg" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v1.3-blue.svg" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Android%208.0%2B-green.svg" alt="Platform" />
   <img src="https://img.shields.io/badge/Status-Stable%20Release-success.svg" alt="Status" />
   <img src="https://img.shields.io/badge/License-Free-purple.svg" alt="License" />
@@ -35,7 +35,7 @@
 ## 📲 How to Download & Install
 
 1. **Download the APK**:
-   - Click the button above or [**Direct Download ATune-v1.2.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-v1.2.apk).
+   - Click the button above or [**Direct Download ATune-v1.3.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-v1.3.apk).
    - Alternatively, head over to the [**Releases Tab**](https://github.com/TusharTyagi-63/ATune-App/releases) to view all versions and changelogs.
 
 2. **Allow Installation from Unknown Sources**:
@@ -54,7 +54,7 @@
 | **App Name** | ATune |
 | **Package** | `com.example.atune` |
 | **Version** | `1.2` |
-| **APK File** | `ATune-v1.2.apk` |
+| **APK File** | `ATune-v1.3.apk` |
 | **File Size** | ~18.9 MB |
 | **Minimum OS** | Android 8.0 (API level 26) or higher |
 | **Architecture** | Universal (ARM64, ARMv7, x86_64) |
@@ -62,3 +62,4 @@
 ---
 
 <p align="center">Made with ❤️ by <a href="https://github.com/TusharTyagi-63">TusharTyagi-63</a></p>
+
