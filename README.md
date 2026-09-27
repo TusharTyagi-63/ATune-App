@@ -6,12 +6,12 @@
 
 <p align="center">
   <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk">
-    <img src="https://img.shields.io/badge/Download-ATune%20v2.1%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+    <img src="https://img.shields.io/badge/Download-ATune%20v2.2%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v2.1-blue.svg" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v2.2-blue.svg" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Android%208.0%2B-green.svg" alt="Platform" />
   <img src="https://img.shields.io/badge/Status-Stable%20Release-success.svg" alt="Status" />
   <img src="https://img.shields.io/badge/License-Free-purple.svg" alt="License" />
@@ -21,10 +21,14 @@
 
 ## ✨ Features & Highlights
 
+- 🎯 **Multi-Dimensional "Made For You" Preference Engine**: Explicit multi-dimensional feedback across 7 dimensions (Language, Industry, Mood, Production Style, Theme, Singer/Artist, and Vocal Timbre). Thumbs-up immediately queries and expands similar tracks, while thumbs-down permanently filters out unwanted vibes.
+- 🎛️ **Interactive Taste Preferences & Feedback Manager**: Handpick, review, and undo your "Loved & Boosted" and "Tuned Out / Hidden" feedbacks anytime via the dedicated Taste Preferences manager in the Made For You section.
+- 🎧 **Zero-Interruption Voice Assistant Interaction**: Smart headphone detection keeps music playing at **100% full volume with ZERO ducking** when earbuds or headphones are connected, while providing subtle background ducking on loudspeakers.
+- 📻 **AI Radio DJ Commentary**: Real-time charismatic radio host commentary introducing and hyping up songs and transitions, customized to your Taste DNA archetype.
+- 📖 **"Explain This Song" Deep Dive**: In-depth breakdowns of song storylines, cultural metaphors, lyrical wordplay, and sonic arrangement.
 - ⚡ **Multi-Threaded Turbo Downloads (MB/s Speeds)**: Converted single sequential streams into 4 concurrent HTTP Range segmented downloads using `RandomAccessFile` chunk streaming, bypassing CDN rate limits for ultra-fast multi-megabyte per second downloads.
 - 🎤 **Robust Multi-Tier Lyrics Engine**: Exact-match Tier 0 LRCLIB (`/api/get`), safe null-resilient JSON parsing, multi-pass search fallback, and `lyrics.ovh` integration for instant, rock-solid synchronized karaoke lyrics.
-- 🎚️ **Unlocked Audiophile Punch & 3D Spatial Audio**: DynamicsProcessing limiter unclamped for true physical low-end power, +12 dB sub-bass shelf with 230 Hz warmth, forced Transaural 3D virtualization for phone speakers & headphones, and self-healing session recovery.
-- 🧠 **Maximized "Made For You" Discovery Graph**: 50+ Artist Affinity Knowledge Graph mapping peers across Bollywood, Punjabi, Pop, Rock, and Hip-Hop with strict 100% exclusion of already owned/liked/downloaded songs and Golden Discovery Ratio balancing.
+- 🎚️ **Audiophile Punch & 3D Spatial Audio**: DynamicsProcessing limiter unclamped for physical low-end power, +12 dB sub-bass shelf with 230 Hz warmth, forced Transaural 3D virtualization for phone speakers & headphones, and self-healing session recovery.
 - 🛡️ **Smooth Uninterrupted Playback**: Disabled aggressive silence-skipping and eliminated accidental tap-to-seek triggers during lyrics scrolling, ensuring songs never fast-forward or jump ahead unexpectedly.
 - 🎨 **Official 3D Adaptive Branding & Material You Theming**: Modern 3D ribbon monogram and electric cyan soundwave with layered adaptive icons, sub-pixel alpha matting, and dynamic Android 13+ wallpaper theming.
 - 📥 **Persistent WorkManager Background Downloads**: Crash- and reboot-resilient background download pipeline with live speed monitoring (KB/s, MB/s), pause/resume flags, and unmetered (WiFi-only) network constraint controls.
@@ -34,7 +38,7 @@
 - 🚗 **Android Auto & MediaBrowser Integration**: Upgraded `PlaybackService` to `MediaLibraryService` for seamless browsing and playback on Android Auto dashboards and wearable head units.
 - 🎧 **Instant Music Streaming & Search**: Search millions of tracks online with instant streaming powered by Media3 ExoPlayer.
 - 🔐 **Hardware-Backed AES-256 GCM Key Security**: AI Studio credentials and API keys are encrypted at rest using Android KeyStore hardware security.
-- 📦 **R8 Ultra-Compact Release Packaging**: Footprint reduced down to **~4.67 MB** with resource shrinking and custom ProGuard keep rules for Media3, Room, NewPipeExtractor, and Coil.
+- 📦 **R8 Ultra-Compact Release Packaging**: Footprint reduced down to **~4.48 MB** with resource shrinking and custom ProGuard keep rules for Media3, Room, NewPipeExtractor, and Coil.
 - 🏗️ **Modular Screen Architecture**: Decoupled, dedicated Compose modules (`HomeScreen`, `SearchScreen`, `LibraryScreen`, `PlaylistDetailScreen`, `SettingsScreen`) for high maintainability and zero latency.
 - 🔄 **Pull-to-Refresh Discovery**: Native swipe-down gesture support on both the Home screen and Made For You playlist to effortlessly refresh recommendations and curated mixes.
 - 🤖 **Multi-Provider Conversational AI Studio**: Integrated voice assistant supporting OpenAI GPT-4o mini, Groq ultra-fast LPUs, and Google Gemini with sub-second device and playback control.
@@ -50,7 +54,7 @@
 
 1. **Download the APK**:
    - Click the button above or [**Direct Download ATune-latest.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk) (always gets the latest release).
-   - Alternatively, download [**ATune-v2.1.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v2.1/ATune-v2.1.apk).
+   - Alternatively, download [**ATune-v2.2.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v2.2/ATune-v2.2.apk).
    - Or head over to the [**Releases Tab**](https://github.com/TusharTyagi-63/ATune-App/releases) to view all versions and changelogs.
 
 2. **Allow Installation from Unknown Sources**:
@@ -68,9 +72,9 @@
 |---|---|
 | **App Name** | ATune |
 | **Package** | com.example.atune |
-| **Version** | 2.1 |
-| **APK File** | ATune-v2.1.apk / ATune-latest.apk |
-| **File Size** | ~4.67 MB |
+| **Version** | 2.2 |
+| **APK File** | ATune-v2.2.apk / ATune-latest.apk |
+| **File Size** | ~4.48 MB |
 | **Minimum OS** | Android 8.0 (API level 26) or higher |
 | **Architecture** | Universal (ARM64, ARMv7, x86_64) |
 
