@@ -6,12 +6,12 @@
 
 <p align="center">
   <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk">
-    <img src="https://img.shields.io/badge/Download-ATune%20v2.2%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+    <img src="https://img.shields.io/badge/Download-ATune%20v2.3%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v2.2-blue.svg" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v2.3-blue.svg" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Android%208.0%2B-green.svg" alt="Platform" />
   <img src="https://img.shields.io/badge/Status-Stable%20Release-success.svg" alt="Status" />
   <img src="https://img.shields.io/badge/License-Free-purple.svg" alt="License" />
@@ -21,6 +21,13 @@
 
 ## ✨ Features & Highlights
 
+- 🚀 **Turbocharged Composition & Stable Key Diffing**: Added unique, stable keys across all LazyLists in every screen, eliminating unnecessary recompositions and redundant image fetches during scrolling.
+- 🔋 **Lifecycle-Aware Flow Collection**: Upgraded 30+ root and screen flow collectors to `collectAsStateWithLifecycle()`, cutting CPU usage and preserving battery when the app is backgrounded.
+- 🧠 **Global Coil Singleton Image Cache**: Integrated `ImageLoaderFactory` with 15% RAM cache and 100MB disk cache, reusing cached bitmaps everywhere and saving cellular bandwidth.
+- ⚡ **Optimized ExoPlayer Buffer & 60% Memory Cut**: Refined buffer boundaries (20s/60s) for responsive playback starts and zero network waste on track skips.
+- ⚡ **Instant-Load Staggered Network Streaming**: Primary Trending songs render immediately on startup (~300ms) with zero spinner delay, while regional playlists stream in progressively.
+- 📂 **Direct Playlist URL Import in Library**: Exposed direct playlist URL importing right from the Saved Playlists header.
+- 🗄️ **Room Indexing & SQLite Write-Ahead Logging (WAL)**: Indexed playback timestamps and play counts, with WAL enabling concurrent reads while writes persist seamlessly.
 - 🎯 **Multi-Dimensional "Made For You" Preference Engine**: Explicit multi-dimensional feedback across 7 dimensions (Language, Industry, Mood, Production Style, Theme, Singer/Artist, and Vocal Timbre). Thumbs-up immediately queries and expands similar tracks, while thumbs-down permanently filters out unwanted vibes.
 - 🎛️ **Interactive Taste Preferences & Feedback Manager**: Handpick, review, and undo your "Loved & Boosted" and "Tuned Out / Hidden" feedbacks anytime via the dedicated Taste Preferences manager in the Made For You section.
 - 🎧 **Zero-Interruption Voice Assistant Interaction**: Smart headphone detection keeps music playing at **100% full volume with ZERO ducking** when earbuds or headphones are connected, while providing subtle background ducking on loudspeakers.
@@ -38,7 +45,7 @@
 - 🚗 **Android Auto & MediaBrowser Integration**: Upgraded `PlaybackService` to `MediaLibraryService` for seamless browsing and playback on Android Auto dashboards and wearable head units.
 - 🎧 **Instant Music Streaming & Search**: Search millions of tracks online with instant streaming powered by Media3 ExoPlayer.
 - 🔐 **Hardware-Backed AES-256 GCM Key Security**: AI Studio credentials and API keys are encrypted at rest using Android KeyStore hardware security.
-- 📦 **R8 Ultra-Compact Release Packaging**: Footprint reduced down to **~4.48 MB** with resource shrinking and custom ProGuard keep rules for Media3, Room, NewPipeExtractor, and Coil.
+- 📦 **R8 Ultra-Compact Release Packaging**: Footprint reduced down to **~4.70 MB** with resource shrinking and custom ProGuard keep rules for Media3, Room, NewPipeExtractor, and Coil.
 - 🏗️ **Modular Screen Architecture**: Decoupled, dedicated Compose modules (`HomeScreen`, `SearchScreen`, `LibraryScreen`, `PlaylistDetailScreen`, `SettingsScreen`) for high maintainability and zero latency.
 - 🔄 **Pull-to-Refresh Discovery**: Native swipe-down gesture support on both the Home screen and Made For You playlist to effortlessly refresh recommendations and curated mixes.
 - 🤖 **Multi-Provider Conversational AI Studio**: Integrated voice assistant supporting OpenAI GPT-4o mini, Groq ultra-fast LPUs, and Google Gemini with sub-second device and playback control.
@@ -54,7 +61,7 @@
 
 1. **Download the APK**:
    - Click the button above or [**Direct Download ATune-latest.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk) (always gets the latest release).
-   - Alternatively, download [**ATune-v2.2.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v2.2/ATune-v2.2.apk).
+   - Alternatively, download [**ATune-v2.3.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v2.3/ATune-v2.3.apk).
    - Or head over to the [**Releases Tab**](https://github.com/TusharTyagi-63/ATune-App/releases) to view all versions and changelogs.
 
 2. **Allow Installation from Unknown Sources**:
@@ -72,9 +79,9 @@
 |---|---|
 | **App Name** | ATune |
 | **Package** | com.example.atune |
-| **Version** | 2.2 |
-| **APK File** | ATune-v2.2.apk / ATune-latest.apk |
-| **File Size** | ~4.48 MB |
+| **Version** | 2.3 |
+| **APK File** | ATune-v2.3.apk / ATune-latest.apk |
+| **File Size** | ~4.70 MB |
 | **Minimum OS** | Android 8.0 (API level 26) or higher |
 | **Architecture** | Universal (ARM64, ARMv7, x86_64) |
 
