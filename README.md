@@ -6,12 +6,12 @@
 
 <p align="center">
   <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk">
-    <img src="https://img.shields.io/badge/Download-ATune%20v2.3%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+    <img src="https://img.shields.io/badge/Download-ATune%20v2.4%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v2.3-blue.svg" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v2.4-blue.svg" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Android%208.0%2B-green.svg" alt="Platform" />
   <img src="https://img.shields.io/badge/Status-Stable%20Release-success.svg" alt="Status" />
   <img src="https://img.shields.io/badge/License-Free-purple.svg" alt="License" />
@@ -20,6 +20,13 @@
 ---
 
 ## ✨ Features & Highlights
+
+- 🎵 **Headless Service Playback Engine**: Completely migrated ExoPlayer media preparation, queue management, and `STATE_ENDED` track transitions from UI components into the headless background service (`MusicPlayer` / `PlaybackService`). Songs now smoothly and autonomously transition to the next track with the phone screen off, locked, or backgrounded.
+- 🛡️ **Zero-Pause State Synchronization**: Eliminated asynchronous `stop()` race conditions that previously flipped `isPlaying` to paused during track loading; crossfade volume initialization hardened against silent playback.
+- 🌐 **Self-Healing Background CDN Recovery**: Error recovery for expired YouTube CDN tokens and HTTP 403 status codes operates autonomously at the service layer without needing the UI open.
+- 🎛️ **Streamlined Settings Audio Quality (Low, Medium, Max)**: Replaced verbose bitrate text in Settings with clean, modern segmented buttons (`Low`, `Medium`, `Max`) mapped directly to optimal Opus and AAC stream profiles.
+- 🧹 **Clean Library UI**: Removed redundant top-right `+` button in the Library screen, consolidating playlist creation inside the dedicated Playlists section.
+- 🔒 **Permanent App-Close Playback Termination**: Swiping ATune away from Recents or exiting now immediately and directly halts playback and clears notifications without requiring an extra toggle.
 
 - 🚀 **Turbocharged Composition & Stable Key Diffing**: Added unique, stable keys across all LazyLists in every screen, eliminating unnecessary recompositions and redundant image fetches during scrolling.
 - 🔋 **Lifecycle-Aware Flow Collection**: Upgraded 30+ root and screen flow collectors to `collectAsStateWithLifecycle()`, cutting CPU usage and preserving battery when the app is backgrounded.
@@ -61,7 +68,7 @@
 
 1. **Download the APK**:
    - Click the button above or [**Direct Download ATune-latest.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk) (always gets the latest release).
-   - Alternatively, download [**ATune-v2.3.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v2.3/ATune-v2.3.apk).
+   - Alternatively, download [**ATune-v2.4.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v2.4/ATune-v2.4.apk).
    - Or head over to the [**Releases Tab**](https://github.com/TusharTyagi-63/ATune-App/releases) to view all versions and changelogs.
 
 2. **Allow Installation from Unknown Sources**:
@@ -79,8 +86,8 @@
 |---|---|
 | **App Name** | ATune |
 | **Package** | com.example.atune |
-| **Version** | 2.3 |
-| **APK File** | ATune-v2.3.apk / ATune-latest.apk |
+| **Version** | 2.4 |
+| **APK File** | ATune-v2.4.apk / ATune-latest.apk |
 | **File Size** | ~4.70 MB |
 | **Minimum OS** | Android 8.0 (API level 26) or higher |
 | **Architecture** | Universal (ARM64, ARMv7, x86_64) |
