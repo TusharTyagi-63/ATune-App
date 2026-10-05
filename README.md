@@ -6,12 +6,12 @@
 
 <p align="center">
   <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk">
-    <img src="https://img.shields.io/badge/Download-ATune%20v2.6%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+    <img src="https://img.shields.io/badge/Download-ATune%20v2.7%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v2.6-blue.svg" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v2.7-blue.svg" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Android%208.0%2B-green.svg" alt="Platform" />
   <img src="https://img.shields.io/badge/Status-Stable%20Release-success.svg" alt="Status" />
   <img src="https://img.shields.io/badge/License-Free-purple.svg" alt="License" />
@@ -21,7 +21,11 @@
 
 ## ✨ Features & Highlights
 
-- ⚡ **Instant Playback & Zero-Deadlock Streaming Engine (v2.6)**: Completely resolved the playback stall and idle deadlock issue. Corrected ExoPlayer's `DefaultHttpDataSource` redirect handling on YouTube CDN streams, eliminated `STATE_IDLE` playback deadlocks on song selection, tuned initial playback buffering to 1,500ms for instantaneous first-tap start, safely recycle OkHttp socket connections, and prioritize hardware-accelerated M4A/AAC streams.
+- 🛡️ **100% Rock-Solid Playback Stability (v2.7)**: Permanently resolved the critical 1–2 second playback crash affecting both online streaming and downloaded songs. 
+  - **Native Audio Effect Stabilization**: Replaced hardware-unstable `DynamicsProcessing` and forced virtualization calls that caused unhandled native `SIGSEGV`/`SIGABRT` crashes in Android's `audioserver` with standard, rock-solid hardware `BassBoost`, `Virtualizer`, and `LoudnessEnhancer`.
+  - **Binder IPC Buffer Overflow Prevention**: Eliminated `TransactionTooLargeException` crashes caused by parceling uncompressed 512x512 bitmaps through `MediaMetadataCompat` over Android's 1 MB Binder transaction buffer. Switched to lightweight `Uri` references and compact 192x192 bitmaps.
+  - **Global Crash Shield**: Installed a global uncaught exception handler in `ATuneApplication` to catch and log any unanticipated edge cases safely without hard silent exits.
+- ⚡ **Instant Playback & Zero-Deadlock Streaming Engine**: Resolved the playback stall and idle deadlock issue. Corrected ExoPlayer's `DefaultHttpDataSource` redirect handling on YouTube CDN streams, eliminated `STATE_IDLE` playback deadlocks on song selection, tuned initial playback buffering to 1,500ms for instantaneous first-tap start, safely recycle OkHttp socket connections, and prioritize hardware-accelerated M4A/AAC streams.
 - 📶 **Poor & Fluctuating Network Resilient Streaming**: Completely overhauled playback error handling and stream extraction to eliminate rapid, erratic song skipping on poor or fluctuating connections. ExoPlayer now withstands transient packet loss, signal dips, and handoffs with a fast 3-attempt exponential backoff retry policy (`DefaultLoadErrorHandlingPolicy(3)`).
 - 🔄 **Non-Skipping Self-Healing Stream Recovery**: Network timeouts, socket drops, and expired CDN URLs will NEVER skip through the playlist. The player automatically retries with exponential backoff and transparently resumes at the exact interrupted millisecond via native `setMediaItem(mediaItem, startPositionMs)` with zero double-buffering.
 - 🎚️ **Adaptive Low-Bitrate Fallback & LRU Stream Caching**: Integrated an in-memory `LruCache` for stream URLs and added automatic fallback to lightweight ~48–70 kbps Opus/AAC streams when higher bitrates encounter network congestion, saving up to 70% bandwidth and playing smoothly on 2G/3G/poor 4G.
@@ -76,7 +80,7 @@
 
 1. **Download the APK**:
    - Click the button above or [**Direct Download ATune-latest.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk) (always gets the latest release).
-   - Alternatively, download [**ATune-v2.6.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v2.6/ATune-v2.6.apk).
+   - Alternatively, download [**ATune-v2.7.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v2.7/ATune-v2.7.apk).
    - Or head over to the [**Releases Tab**](https://github.com/TusharTyagi-63/ATune-App/releases) to view all versions and changelogs.
 
 2. **Allow Installation from Unknown Sources**:
@@ -94,8 +98,8 @@
 |---|---|
 | **App Name** | ATune |
 | **Package** | com.example.atune |
-| **Version** | 2.6 |
-| **APK File** | ATune-v2.6.apk / ATune-latest.apk |
+| **Version** | 2.7 |
+| **APK File** | ATune-v2.7.apk / ATune-latest.apk |
 | **File Size** | ~4.70 MB |
 | **Minimum OS** | Android 8.0 (API level 26) or higher |
 | **Architecture** | Universal (ARM64, ARMv7, x86_64) |
