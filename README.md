@@ -6,12 +6,12 @@
 
 <p align="center">
   <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk">
-    <img src="https://img.shields.io/badge/Download-ATune%20v2.4%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+    <img src="https://img.shields.io/badge/Download-ATune%20v2.5%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v2.4-blue.svg" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v2.5-blue.svg" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Android%208.0%2B-green.svg" alt="Platform" />
   <img src="https://img.shields.io/badge/Status-Stable%20Release-success.svg" alt="Status" />
   <img src="https://img.shields.io/badge/License-Free-purple.svg" alt="License" />
@@ -21,12 +21,19 @@
 
 ## ✨ Features & Highlights
 
-- 🎵 **Headless Service Playback Engine**: Completely migrated ExoPlayer media preparation, queue management, and `STATE_ENDED` track transitions from UI components into the headless background service (`MusicPlayer` / `PlaybackService`). Songs now smoothly and autonomously transition to the next track with the phone screen off, locked, or backgrounded.
+- 📶 **Poor & Fluctuating Network Resilient Streaming**: Completely overhauled playback error handling and stream extraction to eliminate rapid, erratic song skipping on poor or fluctuating connections. ExoPlayer now withstands transient packet loss, signal dips, and handoffs with an 8-attempt exponential backoff retry policy (`DefaultLoadErrorHandlingPolicy(8)`).
+- 🔄 **Non-Skipping Self-Healing Stream Recovery**: Network timeouts, socket drops, and expired CDN URLs will NEVER skip through the playlist. The player automatically retries with exponential backoff and transparently resumes at the exact interrupted millisecond via native `setMediaItem(mediaItem, startPositionMs)` with zero double-buffering.
+- 🎚️ **Adaptive Low-Bitrate Fallback & LRU Stream Caching**: Integrated an in-memory `LruCache` for stream URLs and added automatic fallback to lightweight ~48–70 kbps Opus/AAC streams when higher bitrates encounter network congestion, saving up to 70% bandwidth and playing smoothly on 2G/3G/poor 4G.
+- 🛡️ **Bandwidth-Aware Safe Prefetching**: Prefetching now gives 100% network priority to active playback. Background caching waits until the active song is comfortably buffered, aborts if the player is actively buffering, and avoids heavy audio byte downloads on metered connections.
+- ⚡ **Expanded Buffer Cushions & Stutter Elimination**: Increased HTTP connect/read timeouts to 25s, raised initial buffer to 2,500ms, and rebuffer recovery cushion to 4,000ms, permanently eliminating 1-second start-stop stutter loops on high network jitter.
+- 🔁 **Instant Idle Playback Retry**: Tapping Play/Pause when the player is idle or recovering from network loss seamlessly re-initiates stream extraction and resumes the selected song immediately.
+
+- 🎵 **Headless Service Playback Engine**: Completely migrated ExoPlayer media preparation, queue management, and `STATE_ENDED` track transitions from UI components into the headless background service (`MusicPlayer` / `PlaybackService`). Songs smoothly and autonomously transition to the next track with the phone screen off, locked, or backgrounded.
 - 🛡️ **Zero-Pause State Synchronization**: Eliminated asynchronous `stop()` race conditions that previously flipped `isPlaying` to paused during track loading; crossfade volume initialization hardened against silent playback.
 - 🌐 **Self-Healing Background CDN Recovery**: Error recovery for expired YouTube CDN tokens and HTTP 403 status codes operates autonomously at the service layer without needing the UI open.
-- 🎛️ **Streamlined Settings Audio Quality (Low, Medium, Max)**: Replaced verbose bitrate text in Settings with clean, modern segmented buttons (`Low`, `Medium`, `Max`) mapped directly to optimal Opus and AAC stream profiles.
-- 🧹 **Clean Library UI**: Removed redundant top-right `+` button in the Library screen, consolidating playlist creation inside the dedicated Playlists section.
-- 🔒 **Permanent App-Close Playback Termination**: Swiping ATune away from Recents or exiting now immediately and directly halts playback and clears notifications without requiring an extra toggle.
+- 🎛️ **Streamlined Settings Audio Quality (Low, Medium, Max)**: Clean, modern segmented buttons (`Low`, `Medium`, `Max`) mapped directly to optimal Opus and AAC stream profiles.
+- 🧹 **Clean Library UI**: Consolidated playlist creation inside the dedicated Playlists section.
+- 🔒 **Permanent App-Close Playback Termination**: Swiping ATune away from Recents or exiting immediately and directly halts playback and clears notifications.
 
 - 🚀 **Turbocharged Composition & Stable Key Diffing**: Added unique, stable keys across all LazyLists in every screen, eliminating unnecessary recompositions and redundant image fetches during scrolling.
 - 🔋 **Lifecycle-Aware Flow Collection**: Upgraded 30+ root and screen flow collectors to `collectAsStateWithLifecycle()`, cutting CPU usage and preserving battery when the app is backgrounded.
@@ -68,7 +75,7 @@
 
 1. **Download the APK**:
    - Click the button above or [**Direct Download ATune-latest.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk) (always gets the latest release).
-   - Alternatively, download [**ATune-v2.4.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v2.4/ATune-v2.4.apk).
+   - Alternatively, download [**ATune-v2.5.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v2.5/ATune-v2.5.apk).
    - Or head over to the [**Releases Tab**](https://github.com/TusharTyagi-63/ATune-App/releases) to view all versions and changelogs.
 
 2. **Allow Installation from Unknown Sources**:
@@ -86,8 +93,8 @@
 |---|---|
 | **App Name** | ATune |
 | **Package** | com.example.atune |
-| **Version** | 2.4 |
-| **APK File** | ATune-v2.4.apk / ATune-latest.apk |
+| **Version** | 2.5 |
+| **APK File** | ATune-v2.5.apk / ATune-latest.apk |
 | **File Size** | ~4.70 MB |
 | **Minimum OS** | Android 8.0 (API level 26) or higher |
 | **Architecture** | Universal (ARM64, ARMv7, x86_64) |
