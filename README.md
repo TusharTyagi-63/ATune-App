@@ -6,12 +6,12 @@
 
 <p align="center">
   <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk">
-    <img src="https://img.shields.io/badge/Download-ATune%20v2.5%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+    <img src="https://img.shields.io/badge/Download-ATune%20v2.6%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v2.5-blue.svg" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v2.6-blue.svg" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Android%208.0%2B-green.svg" alt="Platform" />
   <img src="https://img.shields.io/badge/Status-Stable%20Release-success.svg" alt="Status" />
   <img src="https://img.shields.io/badge/License-Free-purple.svg" alt="License" />
@@ -21,11 +21,12 @@
 
 ## ✨ Features & Highlights
 
-- 📶 **Poor & Fluctuating Network Resilient Streaming**: Completely overhauled playback error handling and stream extraction to eliminate rapid, erratic song skipping on poor or fluctuating connections. ExoPlayer now withstands transient packet loss, signal dips, and handoffs with an 8-attempt exponential backoff retry policy (`DefaultLoadErrorHandlingPolicy(8)`).
+- ⚡ **Instant Playback & Zero-Deadlock Streaming Engine (v2.6)**: Completely resolved the playback stall and idle deadlock issue. Corrected ExoPlayer's `DefaultHttpDataSource` redirect handling on YouTube CDN streams, eliminated `STATE_IDLE` playback deadlocks on song selection, tuned initial playback buffering to 1,500ms for instantaneous first-tap start, safely recycle OkHttp socket connections, and prioritize hardware-accelerated M4A/AAC streams.
+- 📶 **Poor & Fluctuating Network Resilient Streaming**: Completely overhauled playback error handling and stream extraction to eliminate rapid, erratic song skipping on poor or fluctuating connections. ExoPlayer now withstands transient packet loss, signal dips, and handoffs with a fast 3-attempt exponential backoff retry policy (`DefaultLoadErrorHandlingPolicy(3)`).
 - 🔄 **Non-Skipping Self-Healing Stream Recovery**: Network timeouts, socket drops, and expired CDN URLs will NEVER skip through the playlist. The player automatically retries with exponential backoff and transparently resumes at the exact interrupted millisecond via native `setMediaItem(mediaItem, startPositionMs)` with zero double-buffering.
 - 🎚️ **Adaptive Low-Bitrate Fallback & LRU Stream Caching**: Integrated an in-memory `LruCache` for stream URLs and added automatic fallback to lightweight ~48–70 kbps Opus/AAC streams when higher bitrates encounter network congestion, saving up to 70% bandwidth and playing smoothly on 2G/3G/poor 4G.
 - 🛡️ **Bandwidth-Aware Safe Prefetching**: Prefetching now gives 100% network priority to active playback. Background caching waits until the active song is comfortably buffered, aborts if the player is actively buffering, and avoids heavy audio byte downloads on metered connections.
-- ⚡ **Expanded Buffer Cushions & Stutter Elimination**: Increased HTTP connect/read timeouts to 25s, raised initial buffer to 2,500ms, and rebuffer recovery cushion to 4,000ms, permanently eliminating 1-second start-stop stutter loops on high network jitter.
+- ⚡ **Expanded Buffer Cushions & Stutter Elimination**: Increased HTTP connect/read timeouts to 25s, optimized initial buffer to 1,500ms, and rebuffer recovery cushion to 2,500ms, permanently eliminating 1-second start-stop stutter loops on high network jitter.
 - 🔁 **Instant Idle Playback Retry**: Tapping Play/Pause when the player is idle or recovering from network loss seamlessly re-initiates stream extraction and resumes the selected song immediately.
 
 - 🎵 **Headless Service Playback Engine**: Completely migrated ExoPlayer media preparation, queue management, and `STATE_ENDED` track transitions from UI components into the headless background service (`MusicPlayer` / `PlaybackService`). Songs smoothly and autonomously transition to the next track with the phone screen off, locked, or backgrounded.
@@ -75,7 +76,7 @@
 
 1. **Download the APK**:
    - Click the button above or [**Direct Download ATune-latest.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk) (always gets the latest release).
-   - Alternatively, download [**ATune-v2.5.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v2.5/ATune-v2.5.apk).
+   - Alternatively, download [**ATune-v2.6.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v2.6/ATune-v2.6.apk).
    - Or head over to the [**Releases Tab**](https://github.com/TusharTyagi-63/ATune-App/releases) to view all versions and changelogs.
 
 2. **Allow Installation from Unknown Sources**:
@@ -93,8 +94,8 @@
 |---|---|
 | **App Name** | ATune |
 | **Package** | com.example.atune |
-| **Version** | 2.5 |
-| **APK File** | ATune-v2.5.apk / ATune-latest.apk |
+| **Version** | 2.6 |
+| **APK File** | ATune-v2.6.apk / ATune-latest.apk |
 | **File Size** | ~4.70 MB |
 | **Minimum OS** | Android 8.0 (API level 26) or higher |
 | **Architecture** | Universal (ARM64, ARMv7, x86_64) |
