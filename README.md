@@ -6,12 +6,12 @@
 
 <p align="center">
   <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk">
-    <img src="https://img.shields.io/badge/Download-ATune%20v2.9%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+    <img src="https://img.shields.io/badge/Download-ATune%20v3.0%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v2.9-blue.svg" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v3.0-blue.svg" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Android%208.0%2B-green.svg" alt="Platform" />
   <img src="https://img.shields.io/badge/Status-Stable%20Release-success.svg" alt="Status" />
   <img src="https://img.shields.io/badge/License-Free-purple.svg" alt="License" />
@@ -20,6 +20,17 @@
 ---
 
 ## ✨ Features & Highlights
+
+- 🚀 **In-App OTA Auto-Updater (v3.0)**:
+  - **Automated Update Discovery**: Checks GitHub releases automatically in the background using lightweight OkHttp client.
+  - **In-App Download & Install**: Interactive dialog displays version changelog, real-time download progress bar, and launches native Android package installer safely via secure `FileProvider`.
+  - **Manual Trigger in Settings**: On-demand "Check for Updates" button in Settings screen with instant update status or version confirmation toast.
+- 🎯 **Made For You Feedback & Negative Queue Purge (v3.0)**:
+  - **Direct Like / Dislike Controls**: Integrated dynamic thumbs up / thumbs down controls right inside Player Bottom Sheet for Made For You tracks.
+  - **Auto-Skip & Queue Purge**: Giving negative feedback (thumbs down) instantly records a negative affinity score, auto-skips immediately to the next song, and purges all copies/variants of the disliked track from the active playback queue.
+- 🧼 **Canonical Variant Song Deduplication (v3.0)**:
+  - **Acoustic & Title Normalization**: Strips YouTube upload metadata artifacts (`(Official Video)`, `[Lyrics]`, `(Audio)`, `4K`, `Remastered`, etc.) and primary artists.
+  - **Levenshtein Fuzzy Deduplication**: Eliminates redundant recommendations across Made For You, curated mixes, and discovery lists.
 
 - 🛡️ **100% Rock-Solid Playback Stability (v2.9)**: Permanently eliminated the exact crash causing the app to close after ~6–8 seconds into playback.
   - **Cross-Thread ExoPlayer Violation Eliminated**: Pinpointed via live ADB device logcat that background stream prefetching (`prefetchJob` after 8s) and track pre-caching were reading `player.playbackState` from `Dispatchers.IO` (`DefaultDispatcher-worker`), violating Media3 ExoPlayer's strict single-thread rule (`IllegalStateException: Player is accessed on the wrong thread`).
@@ -80,7 +91,7 @@
 
 1. **Download the APK**:
    - Click the button above or [**Direct Download ATune-latest.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk) (always gets the latest release).
-   - Alternatively, download [**ATune-v2.9.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v2.9/ATune-v2.9.apk).
+   - Alternatively, download [**ATune-v3.0.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v3.0/ATune-v3.0.apk).
    - Or head over to the [**Releases Tab**](https://github.com/TusharTyagi-63/ATune-App/releases) to view all versions and changelogs.
 
 2. **Allow Installation from Unknown Sources**:
@@ -98,9 +109,9 @@
 |---|---|
 | **App Name** | ATune |
 | **Package** | com.example.atune |
-| **Version** | 2.9 |
-| **APK File** | ATune-v2.9.apk / ATune-latest.apk |
-| **File Size** | ~4.72 MB |
+| **Version** | 3.0 |
+| **APK File** | ATune-v3.0.apk / ATune-latest.apk |
+| **File Size** | ~4.74 MB |
 | **Minimum OS** | Android 8.0 (API level 26) or higher |
 | **Architecture** | Universal (ARM64, ARMv7, x86_64) |
 
