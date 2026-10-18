@@ -6,12 +6,12 @@
 
 <p align="center">
   <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk">
-    <img src="https://img.shields.io/badge/Download-ATune%20v3.0%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+    <img src="https://img.shields.io/badge/Download-ATune%20v3.1%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v3.0-blue.svg" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v3.1-blue.svg" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Android%208.0%2B-green.svg" alt="Platform" />
   <img src="https://img.shields.io/badge/Status-Stable%20Release-success.svg" alt="Status" />
   <img src="https://img.shields.io/badge/License-Free-purple.svg" alt="License" />
@@ -20,6 +20,20 @@
 ---
 
 ## ✨ Features & Highlights
+
+- 🎧 **Opus 160kbps Audiophile Streaming (v3.1)**:
+  - **Transparent High-Fidelity Audio**: Explicitly prioritizes YouTube WebM Opus audio streams (itag 251, ~160kbps, 48kHz sampling) over standard AAC, preserving full acoustic bandwidth up to 20kHz with crystalline treble, deep bass response, and zero harsh compression artifacts.
+  - **Smart Bitrate Negotiation**: Seamlessly maps Low, Medium, and Max/High quality settings with Opus and AAC fallbacks for optimal bandwidth efficiency.
+- 🌊 **32-Bit Floating Point Audio Sink (v3.1)**:
+  - **Studio Headroom & Dynamic Range**: ExoPlayer decodes and processes audio through a 32-bit floating point PCM audio sink (`setEnableFloatOutput(true)`), preventing digital clipping and truncation distortion during volume scaling and EQ processing.
+- 🎚️ **EBU R128 DynamicsProcessing Peak Limiter (v3.1)**:
+  - **Studio Loudness Normalization**: Integrated Android hardware `DynamicsProcessing` limiter on API 28+ configured with a -1.0 dBFS true-peak threshold and studio target gain towards -14 LUFS, eliminating abrupt loudness jumps between acoustic tracks and loud masters.
+- 🎯 **Official Topic Stream Prioritization (v3.1)**:
+  - **YouTube Music Filtering**: Search results and playlist imports prioritize official artist channels (`- Topic`, `VEVO`, `Official Audio`) while strictly discarding amateur re-uploads and bootlegs.
+- 🧠 **Pure Kotlin On-Device ML Vector Engine (v3.1)**:
+  - **Zero-Overhead 32D Embeddings**: On-device vector engine calculating cosine similarities and iALS folding-in user centroids in microseconds without native C++ overhead.
+  - **Negative Hyperplane Carving**: Disliked songs carve out a negative subspace to immediately suppress unwanted genres, moods, or styles from Made For You.
+  - **Contextual Multi-Armed Bandits (LinUCB)**: Introduces exploration bonuses to discover promising new artists from the affinity graph without disrupting playlist flow.
 
 - 🚀 **In-App OTA Auto-Updater (v3.0)**:
   - **Automated Update Discovery**: Checks GitHub releases automatically in the background using lightweight OkHttp client.
