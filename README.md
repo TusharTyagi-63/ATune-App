@@ -6,12 +6,12 @@
 
 <p align="center">
   <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk">
-    <img src="https://img.shields.io/badge/Download-ATune%20v3.1%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+    <img src="https://img.shields.io/badge/Download-ATune%20v3.2%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v3.1-blue.svg" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v3.2-blue.svg" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Android%208.0%2B-green.svg" alt="Platform" />
   <img src="https://img.shields.io/badge/Status-Stable%20Release-success.svg" alt="Status" />
   <img src="https://img.shields.io/badge/License-Free-purple.svg" alt="License" />
@@ -21,7 +21,18 @@
 
 ## ✨ Features & Highlights
 
-- 🎧 **Opus 160kbps Audiophile Streaming (v3.1)**:
+- 🧠 **On-Device ML & Intelligent Audio Systems (v3.2)**:
+  - 🤖 **Taste Autopilot & Live Playback Telemetry**: Automatically learns your taste as you listen. Completing $\ge 70\%$ of a song boosts artist affinity and shifts the positive taste centroid; skipping within 20 seconds registers a gentle penalty without requiring manual button presses.
+  - 🎤 **Instant AI Vocal Attenuation / Karaoke Engine**: One-tap vocal suppression right from the player sheet! Implements a real-time center-channel notch filter attenuating human vocal formants (250 Hz – 3.5 kHz) by -12 dB to -15 dB while preserving bass punch and high-frequency sparkle.
+  - 🎧 **Dynamic AI AutoEq Headphone Compensation**: Automatically detects connected hardware (Apple AirPods, Sony WH/WF-1000XM, Samsung Galaxy Buds, Bose QC, Sennheiser, Pixel Buds) via `AudioManager` and applies proven Harman Target parametric curves for acoustic correction.
+  - 🎚️ **Harmonic Equal-Power DJ Crossfader**: Mathematical constant-power trigonometric crossfading ($\cos(\frac{\pi t}{2})$ and $\sin(\frac{\pi t}{2})$) ensuring the perceived volume never dips between transitioning tracks.
+  - 🪄 **Smart Prompt / Mood Playlist Builder**: Natural language semantic parser synthesizing 32-dimensional target vectors and ranking tracks by cosine similarity, with quick-tap AI Mood chips (Gym Beast Mode, Late Night Drive, Rainy Lo-Fi, Acoustic Coffeehouse) in Search.
+
+- 📜 **Unlimited Playlist Importing & Custom Management (v3.2)**:
+  - ♾️ **Zero Song Import Limit**: Multi-page pagination loop extracting up to 50 pages (~2,500 tracks) from YouTube and public Spotify playlists, completely eliminating the previous 50-song cap.
+  - 🛠️ **Full Playlist Editing & Customization**: All imported playlists can now be renamed, given custom cover art, populated with new tracks, or pruned.
+  - ☑️ **Multi-Select & Selective Delete**: Dedicated "Select" toggle button, top banner with selection count and "Select All" / "Deselect All", per-track checkboxes, and bottom floating bar with confirmation dialog to batch delete selected tracks in one tap.
+  - ✕ **Single-Track Instant Removal**: Clean remove button on each track for rapid 1-click library maintenance.
   - **Transparent High-Fidelity Audio**: Explicitly prioritizes YouTube WebM Opus audio streams (itag 251, ~160kbps, 48kHz sampling) over standard AAC, preserving full acoustic bandwidth up to 20kHz with crystalline treble, deep bass response, and zero harsh compression artifacts.
   - **Smart Bitrate Negotiation**: Seamlessly maps Low, Medium, and Max/High quality settings with Opus and AAC fallbacks for optimal bandwidth efficiency.
 - 🌊 **32-Bit Floating Point Audio Sink (v3.1)**:
