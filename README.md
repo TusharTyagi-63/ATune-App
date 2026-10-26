@@ -6,12 +6,12 @@
 
 <p align="center">
   <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk">
-    <img src="https://img.shields.io/badge/Download-ATune%20v3.6%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+    <img src="https://img.shields.io/badge/Download-ATune%20v3.7%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v3.6-blue.svg" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v3.7-blue.svg" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Android%208.0%2B-green.svg" alt="Platform" />
   <img src="https://img.shields.io/badge/Status-Stable%20Release-success.svg" alt="Status" />
   <img src="https://img.shields.io/badge/License-Free-purple.svg" alt="License" />
@@ -20,6 +20,12 @@
 ---
 
 ## ✨ Features & Highlights
+
+- 🛡️ **Home Screen Playlist Completeness & Taste Re-Ranking Preservation (v3.7)**:
+  - 🛠️ **Curated Category Preservation**: Fixed an issue in `TasteProfileEngine.rankCandidatesByTaste` where negative language/genre taste penalties were inadvertently filtering out songs from their own curated category playlists (e.g. dropping Punjabi or Bhojpuri songs, or hiding Haryanvi, Global, or Trending shelves). Category playlists now preserve 100% of their unique songs, using taste scoring purely for intra-category ordering.
+  - ⏱️ **Extended Ingestion Timeouts**: Increased curated playlist network timeout to 20s–30s to prevent coroutine cancellation before NewPipe extractor completes multi-page pagination.
+  - 🎵 **Unbounded Valid Stream Duration**: Fixed stream filter in `MusicRepository` so songs with unknown or unpopulated initial duration (`duration <= 0`) are not dropped.
+  - 🔄 **Shelf Health Verification**: `loadTrendingPlaylist` now validates that all 6 core categories have at least 15+ tracks before considering the home screen cache fully populated.
 
 - 🎵 **Home Screen Core Categorization & Complete 50-Track Pagination (v3.6)**:
   - 🌟 **Strict 6 Core Playlists**: Refined the Home screen to feature strictly the 6 core playlists (Trending Now, Bollywood Top 50, Punjabi Hits, Haryanvi Hits, Bhojpuri Hot 50, Global Top 100).
