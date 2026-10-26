@@ -6,12 +6,12 @@
 
 <p align="center">
   <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk">
-    <img src="https://img.shields.io/badge/Download-ATune%20v3.5%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+    <img src="https://img.shields.io/badge/Download-ATune%20v3.6%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v3.5-blue.svg" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v3.6-blue.svg" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Android%208.0%2B-green.svg" alt="Platform" />
   <img src="https://img.shields.io/badge/Status-Stable%20Release-success.svg" alt="Status" />
   <img src="https://img.shields.io/badge/License-Free-purple.svg" alt="License" />
@@ -20,6 +20,24 @@
 ---
 
 ## ✨ Features & Highlights
+
+- 🎵 **Home Screen Core Categorization & Complete 50-Track Pagination (v3.6)**:
+  - 🌟 **Strict 6 Core Playlists**: Refined the Home screen to feature strictly the 6 core playlists (Trending Now, Bollywood Top 50, Punjabi Hits, Haryanvi Hits, Bhojpuri Hot 50, Global Top 100).
+  - 🔄 **Continuous Pagination**: Extractor engine now paginates through multi-page results (`PlaylistInfo.getMoreItems`) and search fallbacks to reliably deliver full 50-song playlists instead of stalling at 10–15 tracks.
+  - 🧹 **Home Screen Cleanliness**: Made For You is focused strictly on the Search Screen to keep the Home screen fast, predictable, and clean.
+
+- 🔍 **Interactive Search & Autocomplete Redesign (v3.6)**:
+  - 🔎 **Header-Integrated Search**: Replaced the static search bar with an expanding Search icon placed immediately to the left of the Import button in the Search heading row.
+  - ⚡ **Live Auto-Suggestions & Recommendations**: Real-time autocomplete suggestions stream as the user types, accompanied by popular search recommendations when opening search.
+  - 📥 **Clean Playlist Separation**:
+    - Renamed "Your Imported Playlists" to "Imported Playlist".
+    - Search Screen displays strictly imported playlists (`!isLocal`).
+    - Library Screen displays strictly offline/user-created playlists (`isLocal == true`), with the Import button cleanly removed from between Saved Playlists and New.
+
+- 🧠 **Made For You Recommendation Overhaul (ML Best Practices v3.6)**:
+  - 🎶 **Maximal Marginal Relevance (MMR) Acoustic Diversity**: Re-ranks candidates by balancing relevance and acoustic diversity ($\lambda=0.72$), preventing artist clusters and acoustic monotony.
+  - ⏱️ **Extended Query Timeout on Slow Networks**: Scaled discovery query timeouts up to 8s (12s on Data Saver), ensuring low-bandwidth connections do not drop discovery jobs.
+  - 🌐 **Multi-Cluster Cold Start Generation**: New listeners with < 3 interactions receive diverse multi-cluster seeds across genres instead of single-query fallbacks.
 
 - 🧠 **ML Best Practices & Intelligence Hardening (v3.4)**:
   - 🛡️ **Bounded Live Centroid EMA**: Live playback feedback updates now use an Exponential Moving Average ($\alpha=0.15$) with a strict $L_2$ norm cap ($\le 10.0$), mathematically preventing feedback loop divergence and runaway centroid drift over long listening sessions.
