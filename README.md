@@ -6,12 +6,12 @@
 
 <p align="center">
   <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk">
-    <img src="https://img.shields.io/badge/Download-ATune%20v3.7%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+    <img src="https://img.shields.io/badge/Download-ATune%20v3.8%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v3.7-blue.svg" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v3.8-blue.svg" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Android%208.0%2B-green.svg" alt="Platform" />
   <img src="https://img.shields.io/badge/Status-Stable%20Release-success.svg" alt="Status" />
   <img src="https://img.shields.io/badge/License-Free-purple.svg" alt="License" />
@@ -20,6 +20,13 @@
 ---
 
 ## ✨ Features & Highlights
+
+- 🧠 **AI Curation Agent & High-Fidelity Studio Audio Upgrade (v3.8)**:
+  - 💎 **High-Fidelity Audio Resolver**: Every candidate track across Home shelves, Decade playlists, and Made For You is scored with studio fidelity heuristics. Verified YouTube Topic channels (`- Topic`) and official record labels (T-Series, Sony Music, Speed Records, Zee Music, YRF) receive maximum priority, while amateur covers, live concert bootlegs, slowed+reverb edits, 8D audio, and dialogue skits are strictly filtered out.
+  - 📻 **Era-Authentic Decade Playlists (1960s – 2020s)**: Curated golden master catalogs for each decade guaranteeing 100% era authenticity (zero modern remakes in 60s/70s/80s/90s playlists), combined with intra-era taste personalization so your favorite artists of that era appear first.
+  - 🎯 **70/30 "Made For You" Smart Blend**: Restructured personalized discovery into a strict 70% familiar tracks (high-affinity vocalists/genres) and 30% fresh discoveries (affinity graph peers and emerging tracks).
+  - ⚡ **Gemini 3.8 Flash Integration**: Upgraded the cloud curation engine to Google's latest `gemini-3.8-flash` model for instant, structured JSON tracklist synthesis.
+  - 🎛️ **Settings AI Curator Agent Hub**: Clean background operation with zero intrusive prompt buttons on playback screens, plus a dedicated Settings hub to inspect Taste Archetype, live 5-axis DNA, toggle Strict Studio Fidelity, and test prompts interactively.
 
 - 🛡️ **Home Screen Playlist Completeness & Taste Re-Ranking Preservation (v3.7)**:
   - 🛠️ **Curated Category Preservation**: Fixed an issue in `TasteProfileEngine.rankCandidatesByTaste` where negative language/genre taste penalties were inadvertently filtering out songs from their own curated category playlists (e.g. dropping Punjabi or Bhojpuri songs, or hiding Haryanvi, Global, or Trending shelves). Category playlists now preserve 100% of their unique songs, using taste scoring purely for intra-category ordering.
