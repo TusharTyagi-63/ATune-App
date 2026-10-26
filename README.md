@@ -6,12 +6,12 @@
 
 <p align="center">
   <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk">
-    <img src="https://img.shields.io/badge/Download-ATune%20v3.3%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+    <img src="https://img.shields.io/badge/Download-ATune%20v3.4%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v3.3-blue.svg" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v3.4-blue.svg" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Android%208.0%2B-green.svg" alt="Platform" />
   <img src="https://img.shields.io/badge/Status-Stable%20Release-success.svg" alt="Status" />
   <img src="https://img.shields.io/badge/License-Free-purple.svg" alt="License" />
@@ -20,6 +20,29 @@
 ---
 
 ## ✨ Features & Highlights
+
+- 🧠 **ML Best Practices & Intelligence Hardening (v3.4)**:
+  - 🛡️ **Bounded Live Centroid EMA**: Live playback feedback updates now use an Exponential Moving Average ($\alpha=0.15$) with a strict $L_2$ norm cap ($\le 10.0$), mathematically preventing feedback loop divergence and runaway centroid drift over long listening sessions.
+  - 🔒 **Negative Hash Guard**: Guarded all vector slot indexing with bitwise masking (`slot = 24 + ((hash and 0x7FFFFFFF) % 8)`), eliminating negative modulo corruption from `abs(Int.MIN_VALUE)`.
+  - 🪄 **Semantic Vector Purity**: Decontaminated prompt vector embeddings by removing raw text hashing into artist slots, ensuring natural language mood prompts (e.g., "chill lofi study beats") project only into acoustic dimensions without spurious artist bias.
+  - 🎯 **Contextual Bandit (LinUCB) Covariance**: Formalized upper confidence bound exploration with true feature context covariance ($\alpha \sqrt{x^T A^{-1} x}$), maintaining optimal exploration/exploitation balance.
+  - ⏳ **Softened Negative Penalties with Half-Life Decay**: Negative artist penalties now decay smoothly with exponential half-life ($T_{half}=14\text{d}$ for feedback, $6\text{h}$ for live fast skips), eliminating recommendation echo chambers.
+
+- 🎛️ **Audio DSP & Hardware Equalizer Interpolation (v3.4)**:
+  - 📐 **Piecewise Log-Frequency Hardware EQ Interpolation**: Automatically maps the 5 Harman target reference anchors (60 Hz, 230 Hz, 1 kHz, 4 kHz, 14 kHz) across 5-, 6-, 8-, and 10-band hardware equalizers based on each device's actual center frequencies (`eq.getCenterFreq()`).
+  - ➕ **Additive Composite Equalizers**: Users can now adjust personal EQ sliders on top of AutoEq headphone compensation curves ($g_{composite} = g_{auto} + g_{user} - 0.5f$).
+  - 🎚️ **Orthogonal Volume Envelopes**: Re-architected volume management into independent envelopes ($V_{effective} = V_{fade} \times V_{duck}$), eliminating volume race conditions between crossfading and voice assistant speech ducking.
+
+- 🗄️ **Room Database Schema Safety & Migration Resilience (v3.4)**:
+  - 🛡️ **Legacy Upgrade Paths**: Added explicit migration paths from legacy version 2 (`MIGRATION_2_6`, `MIGRATION_2_8`) and `fallbackToDestructiveMigrationOnDowngrade()`, eliminating startup crashes for users upgrading from older versions.
+  - ⚡ **O(log N) Indexed Feedback Queries**: Added composite indices on `(feedbackType, timestamp)` in `SongFeedbackEntity`.
+
+- 🎙️ **Voice Assistant Concurrency & Context Safety (v3.4)**:
+  - 🚀 **Zero-Hang Speech Recognition**: Pre-cancelling active sessions before `startListening()` eliminates `ERROR_RECOGNIZER_BUSY` (code 8) on rapid voice button presses.
+  - 🧹 **Activity Leak Prevention**: Ensured `applicationContext` is used throughout `TextToSpeech` and recognizer initializations.
+
+- 📱 **Complete Home Screen Offline Caching (v3.4)**:
+  - 💾 **Full Shelf Offline Serialization**: Extended `HomeScreenData` to serialize Decade (60s, 70s, 80s, 90s) and Workout playlists for instant 0ms offline startup across the entire Home screen.
 
 - ⚡ **Spotify-Grade Ultra-Low Network Streaming Engine (v3.3)**:
   - 🌐 **Dynamic Adaptive Streaming ("Auto")**: Real-time `NetworkQualityMonitor` detects connection speed and metered states. On 2G, EDGE, 3G, or congested cellular connections, automatically negotiates crystal-clear Opus 50–70 kbps audio (`itag 249` & `250`), reducing data consumption by 70–80% (requiring only ~6–8 KB/s) so playback never stalls or stutters.
