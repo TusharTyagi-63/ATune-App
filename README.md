@@ -6,12 +6,12 @@
 
 <p align="center">
   <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk">
-    <img src="https://img.shields.io/badge/Download-ATune%20v3.8%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+    <img src="https://img.shields.io/badge/Download-ATune%20v3.9%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v3.8-blue.svg" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v3.9-blue.svg" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Android%208.0%2B-green.svg" alt="Platform" />
   <img src="https://img.shields.io/badge/Status-Stable%20Release-success.svg" alt="Status" />
   <img src="https://img.shields.io/badge/License-Free-purple.svg" alt="License" />
@@ -20,6 +20,20 @@
 ---
 
 ## ✨ Features & Highlights
+
+- 🔄 **Dynamic Two-Way Cloud Sync Engine for Imported Playlists (v3.9)**:
+  - 🌐 **Spotify & YouTube Modification Reflection**: When a source playlist on YouTube or Spotify is modified (tracks added, removed, or reordered), those changes now reflect seamlessly in ATune's imported playlists.
+  - ⚡ **Smart Stream Reuse**: Unchanged tracks automatically retain their previously resolved streaming mappings, eliminating redundant queries and ensuring rapid sync.
+  - 🔄 **Auto & Manual Sync**: One-touch **Sync** button in both Search Screen and Playlist Detail view with active progress indicators, accompanied by automatic freshness sync checks.
+
+- 📥 **Strict Playlist Separation & Room Database v10 (v3.9)**:
+  - 📂 **Clear Screen Isolation**: Search Screen strictly holds all cloud-imported playlists under **"Imported Playlist"**, while Library Screen strictly displays local/offline playlists under **"SAVED PLAYLISTS"**.
+  - 🛡️ **Schema Migration v10**: Upgraded Room DB to version 10 with dedicated `sourceUrl`, `isImported`, and `lastSyncedTimestamp` fields, with automatic startup migration for previously imported playlists.
+
+- 🎯 **Stream Audio Isolation & Playback Accuracy (v3.9)**:
+  - 🛡️ **Zero Cross-Contamination**: Fixed a critical URL cache key bug in `MusicRepository` where YouTube IDs with hyphens erroneously matched all video URLs. Song A now strictly streams Song A's audio with 100% precision.
+  - ⚡ **Atomic Prefetch Synchronization**: Replaced disjoint prefetch variables with an atomic `PrefetchedTrack` container, preventing rapid skips from playing old stream URLs under new song titles.
+  - 🧹 **Self-Healing Cache Eviction**: Integrated disk and memory cache invalidation on playback recovery.
 
 - 🧠 **AI Curation Agent & High-Fidelity Studio Audio Upgrade (v3.8)**:
   - 💎 **High-Fidelity Audio Resolver**: Every candidate track across Home shelves, Decade playlists, and Made For You is scored with studio fidelity heuristics. Verified YouTube Topic channels (`- Topic`) and official record labels (T-Series, Sony Music, Speed Records, Zee Music, YRF) receive maximum priority, while amateur covers, live concert bootlegs, slowed+reverb edits, 8D audio, and dialogue skits are strictly filtered out.
@@ -180,7 +194,7 @@
 
 1. **Download the APK**:
    - Click the button above or [**Direct Download ATune-latest.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk) (always gets the latest release).
-   - Alternatively, download [**ATune-v3.0.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v3.0/ATune-v3.0.apk).
+   - Alternatively, download [**ATune-v3.9.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v3.9/ATune-v3.9.apk).
    - Or head over to the [**Releases Tab**](https://github.com/TusharTyagi-63/ATune-App/releases) to view all versions and changelogs.
 
 2. **Allow Installation from Unknown Sources**:
@@ -198,9 +212,9 @@
 |---|---|
 | **App Name** | ATune |
 | **Package** | com.example.atune |
-| **Version** | 3.0 |
-| **APK File** | ATune-v3.0.apk / ATune-latest.apk |
-| **File Size** | ~4.74 MB |
+| **Version** | 3.9 |
+| **APK File** | ATune-v3.9.apk / ATune-latest.apk |
+| **File Size** | ~4.80 MB |
 | **Minimum OS** | Android 8.0 (API level 26) or higher |
 | **Architecture** | Universal (ARM64, ARMv7, x86_64) |
 
