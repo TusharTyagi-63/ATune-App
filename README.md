@@ -6,12 +6,12 @@
 
 <p align="center">
   <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk">
-    <img src="https://img.shields.io/badge/Download-ATune%20v3.9%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+    <img src="https://img.shields.io/badge/Download-ATune%20v4.0%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v3.9-blue.svg" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v4.0-blue.svg" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Android%208.0%2B-green.svg" alt="Platform" />
   <img src="https://img.shields.io/badge/Status-Stable%20Release-success.svg" alt="Status" />
   <img src="https://img.shields.io/badge/License-Free-purple.svg" alt="License" />
@@ -20,6 +20,19 @@
 ---
 
 ## ✨ Features & Highlights
+
+- 🌌 **Obsidian Resonance Design System & UI Overhaul (v4.0)**:
+  - 🎨 **Google Stitch Prototyping**: Complete visual architecture redesigned from the ground up using Google Stitch with the *Obsidian Resonance* design language (Canvas `#0A0A0F`, Elevated Glass Surface `#13131B`, Electric Violet `#8B5CF6`, Cyan Pulse `#06B6D4`).
+  - 🌅 **Living Home Screen**: Dynamic time-of-day greeting header ("Good Morning", "Good Evening", "Late Night Vibes"), 2x3 Quick Launch mix grid with 1-tap playback, dancing equalizer badge on active card artwork, and linear shimmer skeleton loaders (zero circular spinners).
+  - 🏝️ **Floating Island Mini-Player**: Glassmorphic capsule floating cleanly above the navigation bar with horizontal swipe-to-skip gestures (left/right drag) and real-time animated 3-bar equalizer wave (`AnimatedEqualizerWave`).
+  - 🔮 **Living Player Screen & 32-Band Visualizer**: Fullscreen living glow experience featuring a reactive 32-band neon spectrum visualizer with peak caps, pulsing bass halo, and fluid laser waveform.
+  - 🎤 **Interactive Tap-to-Seek Karaoke Lyrics**: Seamless lyric timestamp navigation—tap any line to seek playback instantly.
+  - ♾️ **Up Next Queue & Infinite Autoplay**: Integrated toggle switch in the queue sheet to automatically sustain playback with personalized recommendations when your playlist ends.
+  - 💾 **Settings Offline Mode & Storage Breakdown**: Direct offline-only toggle and multi-color storage breakdown bar (Downloads, Media Cache, Artwork Cache, Free Disk).
+
+- 🎛️ **Audiophile Zero-Gap Playback & Dynamic Vintage Leveling (v4.0)**:
+  - ⚡ **True 0ms Gapless Playback**: Native ExoPlayer timeline chaining seamlessly bridges pre-buffered audio tracks with zero silence or buffering gap.
+  - 📻 **Vintage Decades Loudness Leveling**: Dynamic DSP limiter adjustments boost 60s/70s/80s golden era classics (+3.5 dB limiter gain / +6.0 dB loudness target) to match modern loud masters without distortion or clipping.
 
 - 🔄 **Dynamic Two-Way Cloud Sync Engine for Imported Playlists (v3.9)**:
   - 🌐 **Spotify & YouTube Modification Reflection**: When a source playlist on YouTube or Spotify is modified (tracks added, removed, or reordered), those changes now reflect seamlessly in ATune's imported playlists.
@@ -194,7 +207,7 @@
 
 1. **Download the APK**:
    - Click the button above or [**Direct Download ATune-latest.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk) (always gets the latest release).
-   - Alternatively, download [**ATune-v3.9.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v3.9/ATune-v3.9.apk).
+   - Alternatively, download [**ATune-v4.0.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v4.0/ATune-v4.0.apk).
    - Or head over to the [**Releases Tab**](https://github.com/TusharTyagi-63/ATune-App/releases) to view all versions and changelogs.
 
 2. **Allow Installation from Unknown Sources**:
@@ -212,9 +225,9 @@
 |---|---|
 | **App Name** | ATune |
 | **Package** | com.example.atune |
-| **Version** | 3.9 |
-| **APK File** | ATune-v3.9.apk / ATune-latest.apk |
-| **File Size** | ~4.80 MB |
+| **Version** | 4.0 |
+| **APK File** | ATune-v4.0.apk / ATune-latest.apk |
+| **File Size** | ~4.82 MB |
 | **Minimum OS** | Android 8.0 (API level 26) or higher |
 | **Architecture** | Universal (ARM64, ARMv7, x86_64) |
 
