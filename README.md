@@ -6,12 +6,12 @@
 
 <p align="center">
   <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk">
-    <img src="https://img.shields.io/badge/Download-ATune%20v4.0%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+    <img src="https://img.shields.io/badge/Download-ATune%20v4.1%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v4.0-blue.svg" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v4.1-blue.svg" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Android%208.0%2B-green.svg" alt="Platform" />
   <img src="https://img.shields.io/badge/Status-Stable%20Release-success.svg" alt="Status" />
   <img src="https://img.shields.io/badge/License-Free-purple.svg" alt="License" />
@@ -20,6 +20,11 @@
 ---
 
 ## ✨ Features & Highlights
+
+- 🔄 **Autonomous Playlist Sync & Streamlined UI (v4.1)**:
+  - ⚡ **Autonomous Cloud Playlist Synchronization**: Imported playlists from YouTube and Spotify now synchronize in the background completely automatically. The manual sync button has been eliminated in favor of seamless background freshness checks and live subtle progress status.
+  - 🏠 **Clean & Distraction-Free Home Screen**: Removed the redundant Quick Launch grid to present an immediate, uncluttered view of curated playlists and personalized discovery shelves.
+  - 🔍 **De-Cluttered Explore & Search Tabs**: Removed the duplicate "Recently Played" and "Most Played" preview chipsets from the Search Explore tab, funneling full-fidelity listening history into the dedicated top navigation tabs (`[Recently Played]`, `[Most Played]`).
 
 - 🌌 **Obsidian Resonance Design System & UI Overhaul (v4.0)**:
   - 🎨 **Google Stitch Prototyping**: Complete visual architecture redesigned from the ground up using Google Stitch with the *Obsidian Resonance* design language (Canvas `#0A0A0F`, Elevated Glass Surface `#13131B`, Electric Violet `#8B5CF6`, Cyan Pulse `#06B6D4`).
@@ -207,7 +212,7 @@
 
 1. **Download the APK**:
    - Click the button above or [**Direct Download ATune-latest.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk) (always gets the latest release).
-   - Alternatively, download [**ATune-v4.0.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v4.0/ATune-v4.0.apk).
+   - Alternatively, download [**ATune-v4.1.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v4.1/ATune-v4.1.apk).
    - Or head over to the [**Releases Tab**](https://github.com/TusharTyagi-63/ATune-App/releases) to view all versions and changelogs.
 
 2. **Allow Installation from Unknown Sources**:
@@ -225,9 +230,9 @@
 |---|---|
 | **App Name** | ATune |
 | **Package** | com.example.atune |
-| **Version** | 4.0 |
-| **APK File** | ATune-v4.0.apk / ATune-latest.apk |
-| **File Size** | ~4.82 MB |
+| **Version** | 4.1 |
+| **APK File** | ATune-v4.1.apk / ATune-latest.apk |
+| **File Size** | ~4.80 MB |
 | **Minimum OS** | Android 8.0 (API level 26) or higher |
 | **Architecture** | Universal (ARM64, ARMv7, x86_64) |
 
