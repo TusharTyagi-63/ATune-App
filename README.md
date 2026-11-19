@@ -6,12 +6,12 @@
 
 <p align="center">
   <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk">
-    <img src="https://img.shields.io/badge/Download-ATune%20v4.1%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+    <img src="https://img.shields.io/badge/Download-ATune%20v4.2%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v4.1-blue.svg" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v4.2-blue.svg" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Android%208.0%2B-green.svg" alt="Platform" />
   <img src="https://img.shields.io/badge/Status-Stable%20Release-success.svg" alt="Status" />
   <img src="https://img.shields.io/badge/License-Free-purple.svg" alt="License" />
@@ -20,6 +20,13 @@
 ---
 
 ## ✨ Features & Highlights
+
+- 🎨 **Clean, Distraction-Free Player & Streamlined UI (v4.2)**:
+  - 🏝️ **Minimalist Mini-Player**: Removed the "LOSSLESS" badge, cyan animated equalizer bars, and bottom progress line for a sleek, distraction-free floating player card.
+  - 🔮 **De-Cluttered Full Player Screen**: Removed technical audio format badges ("Opus 160 kbps", "32-bit Float DSP", "Spatial 3D") and bottom pulsating visualizer bar, giving artwork and playback controls comfortable vertical breathing room.
+  - ❤️ **Single Unified Like Action**: Removed the duplicate Thumbs Up button from the player screen, letting the standard Heart button handle Liking, saving to Liked Songs, and boosting recommendation taste.
+  - 🔍 **Search & Library De-Duplication**: Removed the duplicate "Made For You" preview grid from the Search Explore tab (accessible via the dedicated top tab) and removed dead import dialog code in Library.
+  - 🗣️ **Human-Friendly App Language**: Converted technical and jargon-heavy settings terms into clear, friendly language ("Headphone Sound Tuning", "Data Saver", "Equalize Volume", "Studio Quality Songs Only", "Storage Limit").
 
 - 🔄 **Autonomous Playlist Sync & Streamlined UI (v4.1)**:
   - ⚡ **Autonomous Cloud Playlist Synchronization**: Imported playlists from YouTube and Spotify now synchronize in the background completely automatically. The manual sync button has been eliminated in favor of seamless background freshness checks and live subtle progress status.
@@ -212,7 +219,7 @@
 
 1. **Download the APK**:
    - Click the button above or [**Direct Download ATune-latest.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk) (always gets the latest release).
-   - Alternatively, download [**ATune-v4.1.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v4.1/ATune-v4.1.apk).
+   - Alternatively, download [**ATune-v4.2.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v4.2/ATune-v4.2.apk).
    - Or head over to the [**Releases Tab**](https://github.com/TusharTyagi-63/ATune-App/releases) to view all versions and changelogs.
 
 2. **Allow Installation from Unknown Sources**:
@@ -230,8 +237,8 @@
 |---|---|
 | **App Name** | ATune |
 | **Package** | com.example.atune |
-| **Version** | 4.1 |
-| **APK File** | ATune-v4.1.apk / ATune-latest.apk |
+| **Version** | 4.2 |
+| **APK File** | ATune-v4.2.apk / ATune-latest.apk |
 | **File Size** | ~4.80 MB |
 | **Minimum OS** | Android 8.0 (API level 26) or higher |
 | **Architecture** | Universal (ARM64, ARMv7, x86_64) |
