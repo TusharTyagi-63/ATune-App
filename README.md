@@ -6,12 +6,12 @@
 
 <p align="center">
   <a href="https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk">
-    <img src="https://img.shields.io/badge/Download-ATune%20v4.2%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+    <img src="https://img.shields.io/badge/Download-ATune%20v4.3%20APK-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v4.2-blue.svg" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-v4.3-blue.svg" alt="Version" />
   <img src="https://img.shields.io/badge/Platform-Android%208.0%2B-green.svg" alt="Platform" />
   <img src="https://img.shields.io/badge/Status-Stable%20Release-success.svg" alt="Status" />
   <img src="https://img.shields.io/badge/License-Free-purple.svg" alt="License" />
@@ -20,6 +20,11 @@
 ---
 
 ## ✨ Features & Highlights
+
+- 💖 **Restored "Made For You" Personalized Mixes (v4.3)**:
+  - 🏠 **Top Shelf on Home Screen**: "Made For You" is prominently restored as the #1 hero shelf directly below the time-of-day greeting header, giving immediate one-tap access to your custom personalized mix as soon as you open the app.
+  - 🔍 **Front & Center in Search**: Promoted "Made For You" to the 2nd tab (`Explore`, `Made For You`, `Recently Played`, `Most Played`) with a dedicated 2-column preview section inside Explore, making your recommendations impossible to miss.
+  - 🔄 **Unified Pull-to-Refresh**: Swiping down on the Home screen now seamlessly regenerates your "Made For You" recommendations in tandem with trending charts.
 
 - 🎨 **Clean, Distraction-Free Player & Streamlined UI (v4.2)**:
   - 🏝️ **Minimalist Mini-Player**: Removed the "LOSSLESS" badge, cyan animated equalizer bars, and bottom progress line for a sleek, distraction-free floating player card.
@@ -219,7 +224,7 @@
 
 1. **Download the APK**:
    - Click the button above or [**Direct Download ATune-latest.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/latest/download/ATune-latest.apk) (always gets the latest release).
-   - Alternatively, download [**ATune-v4.2.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v4.2/ATune-v4.2.apk).
+   - Alternatively, download [**ATune-v4.3.apk**](https://github.com/TusharTyagi-63/ATune-App/releases/download/v4.3/ATune-v4.3.apk).
    - Or head over to the [**Releases Tab**](https://github.com/TusharTyagi-63/ATune-App/releases) to view all versions and changelogs.
 
 2. **Allow Installation from Unknown Sources**:
@@ -237,8 +242,8 @@
 |---|---|
 | **App Name** | ATune |
 | **Package** | com.example.atune |
-| **Version** | 4.2 |
-| **APK File** | ATune-v4.2.apk / ATune-latest.apk |
+| **Version** | 4.3 |
+| **APK File** | ATune-v4.3.apk / ATune-latest.apk |
 | **File Size** | ~4.80 MB |
 | **Minimum OS** | Android 8.0 (API level 26) or higher |
 | **Architecture** | Universal (ARM64, ARMv7, x86_64) |
